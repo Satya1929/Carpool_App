@@ -1,0 +1,3 @@
+[console_scripts]
+source-google-sheets=source_google_sheets.run:run
+
