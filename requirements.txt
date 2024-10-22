@@ -1,6 +1,6 @@
 # google-generativeai
 # PyPDF2
 
-streamlit-gsheets
+# streamlit-gsheets
 pandas
 matplotlib
