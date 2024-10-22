@@ -1,0 +1,8 @@
+# google-generativeai
+# PyPDF2
+
+
+streamlit
+streamlit-gsheets
+pandas
+matplotlib

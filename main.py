@@ -1,37 +1,38 @@
-import pandas as pd
-from google.oauth2 import service_account
-from googleapiclient.discovery import build
+import streamlit as st
 
-# Function to fetch data from Google Sheets using API
-def fetch_data_from_google_sheet(sheet_id, range_name):
-    # Load the service account key
-    creds = service_account.Credentials.from_service_account_file(
-        "C:\\Users\\ASUS\\Desktop\\Carpool_App\\carpool-app-439312-f34c14940ecb.json",  # Update the path to your JSON file
-        scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]  # Read-only access
+def main():
+    # st.title("Travel Partner Finder")
+    st.header("🧑‍🤝‍🧑 Seeking travel partner? Look no further!! (Diwali version)")
+
+    st.write(
+        """
+        Simply fill out this Google form with your preferences and get ready to connect with potential travel partners. 
+
+        Once you've submitted your form, you'll have access to a spreadsheet where you can explore other people's preferences in google speadsheet below or simply put Date in next page of App and get connected !!
+
+        Don't miss out on this opportunity! Start now by filling out the form. 🚀 
+        """
     )
 
-    # Build the service
-    service = build('sheets', 'v4', credentials=creds)
+    # Google Form and Spreadsheet links
+    st.markdown(
+        """
+        - **Google Form Link 🔗:** [Click](<https://docs.google.com/forms/d/e/1FAIpQLScmQSHtkn3IhlAm7NJFA_ujO2vSKNP_lS7i4g2VQG1nWNT-2g/viewform>)
+        - **Spreadsheet 📕:** [Click](https://docs.google.com/spreadsheets/u/1/d/1fbEmtrmVu9heYMfL5P1a9qJ5q0xT3tFj3y2TFVEiGIk/edit?usp=sharing)
+        """
+    )
 
-    # Call the Sheets API
-    sheet = service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=sheet_id, range=range_name).execute()
-    values = result.get('values', [])
+    st.write(
+        """
+        Improving upon feedback dm to Me....!!! 👀✌🏻 (7735416363)
 
-    # Convert to DataFrame if there are values
-    if values:
-        return pd.DataFrame(values[1:], columns=values[0])  # First row as column names
-    else:
-        return pd.DataFrame()
+        📍 IMPORTANT: You can edit your preference, details. A link to edit the response will be emailed to you .
 
-# Example usage
+        📍 YouTube - [Click](https://www.youtube.com/watch?v=HJjtxDpOIow) (Carpool Guide)
+
+        """
+    )
+
+
 if __name__ == "__main__":
-    # Replace with your actual Google Sheet ID and range (e.g., "Sheet1!A1:D")
-    sheet_id = "1fbEmtrmVu9heYMfL5P1a9qJ5q0xT3tFj3y2TFVEiGIk"
-    range_name = "Form Responses 1!C:H"  # Adjust the range as needed
-
-    # Fetch the data
-    df = fetch_data_from_google_sheet(sheet_id, range_name)
-
-    # Display the DataFrame
-    print(df)
+    main()

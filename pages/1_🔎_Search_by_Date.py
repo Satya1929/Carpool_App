@@ -118,3 +118,7 @@ if st.button("Search"):
             st.write("No data found for the selected Travel Date.")
     except Exception as e:
         st.write(f"Error occurred: {e}")
+
+
+
+st.balloons()  # A fun touch!
