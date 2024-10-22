@@ -4,3 +4,4 @@
 # streamlit-gsheets
 pandas
 matplotlib
+st-gsheets-connection
