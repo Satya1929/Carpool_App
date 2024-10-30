@@ -7,7 +7,9 @@ def main():
 
     st.write(
         """
-        Welcome to the Travel Match App! 🚗 (400+ Users in Diwali with 120+ entries !!)
+        Welcome to the Travel Match App! 🚗 
+        
+        Trusted by 400+ Users in Diwali along with 120+ entries !!
 
         Your go-to platform for finding the perfect travel partner based on shared preferences. Just fill out a quick form and you're all set!
 
