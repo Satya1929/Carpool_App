@@ -3,13 +3,13 @@ import streamlit as st
 
 def main():
     # st.title("Travel Partner Finder")
-    st.header("Seeking travel partner?🧑‍🤝‍🧑 Look no further!! (Return to College)")
+    st.header("Seeking travel partner?🧑‍🤝‍🧑 Look no further!! (Back to College)")
 
     st.write(
         """
         Welcome to the Travel Match App! 🚗 
         
-        Trusted by 400+ Users in Diwali along with 120+ entries !!
+        Trusted by 400+ Users in Diwali along with 130+ entries !!
 
         Your go-to platform for finding the perfect travel partner based on shared preferences. Just fill out a quick form and you're all set!
 
