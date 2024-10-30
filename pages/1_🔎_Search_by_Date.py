@@ -88,7 +88,7 @@ if st.button("Search"):
                             <p><strong>👤 Name:</strong> {handle_nan(row[0])}</p>
                             <p><strong>📞 Contact:</strong> {handle_nan(row[1])}</p>
                             <p><strong>⏰ Travel Time:</strong> {handle_nan(row[2])}</p>
-                            <p><strong>📍 Destination:</strong> {handle_nan(row[3])}</p>
+                            <p><strong>📍 Starting Point:</strong> {handle_nan(row[3])}</p>
                             <p><strong>📱 Message:</strong> {handle_nan(row[4])}</p>
                         </div>
                     """, unsafe_allow_html=True)
@@ -112,7 +112,7 @@ if st.button("Search"):
             plt.figure(figsize=(8, 4))
             destination_distribution = filtered_data[filtered_data.columns[3]].apply(handle_nan).value_counts()  # Adjust index if necessary
             plt.pie(destination_distribution, labels=destination_distribution.index, autopct=lambda p: f'{p:.1f}%', startangle=90, textprops={'fontsize': 10})
-            plt.title('Distribution of Destinations')
+            plt.title('Distribution of Starting Point')
             st.pyplot(plt)
         else:
             st.write("No data found for the selected Travel Date.")
