@@ -88,7 +88,7 @@ if st.button("Search"):
                             <p><strong>👤 Name:</strong> {handle_nan(row[0])}</p>
                             <p><strong>📞 Contact:</strong> {handle_nan(row[1])}</p>
                             <p><strong>⏰ Travel Time:</strong> {handle_nan(row[2])}</p>
-                            <p><strong>📍 Starting Point:</strong> {handle_nan(row[3])}</p>
+                            <p><strong>📍 Destination :</strong> {handle_nan(row[3])}</p>
                             <p><strong>📱 Message:</strong> {handle_nan(row[4])}</p>
                         </div>
                     """, unsafe_allow_html=True)
@@ -115,7 +115,7 @@ if st.button("Search"):
             plt.title('Distribution of Starting Point')
             st.pyplot(plt)
         else:
-            st.write("No data found for the selected Travel Date.")
+            st.write("Sorry , No data found for the selected Travel Date.")
     except Exception as e:
         st.write(f"Error occurred: {e}")
 
