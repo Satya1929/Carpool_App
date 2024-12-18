@@ -138,7 +138,7 @@ data['Travel Date'] = data['Travel Date'].dt.strftime('%d-%m-%Y')
 summary_dates = data['Travel Date'].value_counts()
 
 # Summary of total persons for each destination
-destinations_column_name = 'Starting Location'  # Adjust this based on the actual column name in your data
+destinations_column_name = 'Destination'  # Adjust this based on the actual column name in your data
 summary_destinations = data[destinations_column_name].value_counts() if destinations_column_name in data.columns else None
 
 # Create Pie Chart for Travel Dates
@@ -153,7 +153,7 @@ plt.clf()  # Clear the figure for the next plot
 if summary_destinations is not None:
     plt.figure(figsize=(10, 6))
     plt.pie(summary_destinations, labels=summary_destinations.index, autopct='%1.1f%%', startangle=140)
-    plt.title('Summary of Total Persons for Each Starting Location')
+    plt.title('Summary of Total Persons for Each Destination')
     plt.axis('equal')  # Equal aspect ratio ensures that pie chart is a circle.
     st.pyplot(plt)  # Use Streamlit to display the plot
 else:

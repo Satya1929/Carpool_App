@@ -246,7 +246,7 @@ if st.button("Search"):
             plt.figure(figsize=(8, 4))
             destination_distribution = filtered_data[filtered_data.columns[3]].apply(handle_nan).value_counts()  # Adjust index if necessary
             plt.pie(destination_distribution, labels=destination_distribution.index, autopct=lambda p: f'{p:.1f}%', startangle=90, textprops={'fontsize': 10})
-            plt.title('Distribution of Starting Point')
+            plt.title('Distribution of Destination')
             st.pyplot(plt)
         else:
             st.write("Sorry , No data found for the selected Travel Date.")
