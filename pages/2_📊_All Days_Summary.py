@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Google Sheets URL
-url = "https://docs.google.com/spreadsheets/d/1fbEmtrmVu9heYMfL5P1a9qJ5q0xT3tFj3y2TFVEiGIk/edit?usp=sharing"
+url = "https://docs.google.com/spreadsheets/d/1cylJuSxW5dc3Ft8bkYxuZlxu5m9_mPKOqQvc35N2EEg/edit?usp=sharing"
 
 # Connect to Google Sheets
 conn = st.connection("gsheets", type=GSheetsConnection)
