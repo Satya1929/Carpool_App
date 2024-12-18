@@ -82,7 +82,7 @@ def main():
         """
         📍Pages Available:
         - *🏡 Home -> Form:* Enter your preferences [Here](<https://docs.google.com/forms/d/e/1FAIpQLScmQSHtkn3IhlAm7NJFA_ujO2vSKNP_lS7i4g2VQG1nWNT-2g/viewform>).
-        - *🏡 Home -> Spreadsheet:* Access traveler info to connect with potential matches [Here](<https://docs.google.com/spreadsheets/d/1cylJuSxW5dc3Ft8bkYxuZlxu5m9_mPKOqQvc35N2EEg/edit?usp=sharing>).
+        - *🏡 Home -> Spreadsheet:* Access traveler info to connect with potential matches [Here](<https://docs.google.com/spreadsheets/d/1fbEmtrmVu9heYMfL5P1a9qJ5q0xT3tFj3y2TFVEiGIk/edit?usp=sharing>).
         - *🔎 Match By Date:* Select your preferred date to match with 100+ travelers. Plus, plan your time and destination with our analysis of fellow travelers.
         - *📊 All Dates Summary:* View the overall preferences of everyone out there!
         """
