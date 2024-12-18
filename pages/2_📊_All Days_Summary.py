@@ -25,9 +25,9 @@ data['Travel Date'] = data['Travel Date'].dt.strftime('%d-%m-%Y')
 # Summary of total persons for each date
 summary_dates = data['Travel Date'].value_counts()
 
-# Summary of total persons for each destination
-destinations_column_name = 'Destination'  # Adjust this based on the actual column name in your data
-summary_destinations = data[destinations_column_name].value_counts() if destinations_column_name in data.columns else None
+# # Summary of total persons for each destination
+# destinations_column_name = 'Destination'  # Adjust this based on the actual column name in your data
+# summary_destinations = data[destinations_column_name].value_counts() if destinations_column_name in data.columns else None
 
 # Create Pie Chart for Travel Dates
 plt.figure(figsize=(10, 6))
