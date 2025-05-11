@@ -69,7 +69,7 @@ def main():
         """
         Welcome to the Travel Match App! 🚗 
         
-        Trusted by 800+ Users in Diwali along with 300+ entries !!
+        Trusted by 1000+ Users in along with 700+ entries till date !!
 
         Your go-to platform for finding the perfect travel partner based on shared preferences. Just fill out a quick form and you're all set!
 
