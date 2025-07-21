@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>CARPOOL_APP</h1>
 <p align="left">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em><code>Streamlit-based carpool dashboard using Google Sheets</code></em>
 </p>
 <p align="left">
 	<img src="https://img.shields.io/github/license/Satya1929/Carpool_App?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
@@ -38,13 +38,17 @@
 
 ## 📍 Overview
 
-<code>❯ REPLACE-ME</code>
+Carpool_App is a simple Streamlit application that pulls data from Google Sheets to help travellers find carpool partners. Users fill out a Google Form and can then browse matches by date or explore overall trends.
 
 ---
 
 ## 👾 Features
 
-<code>❯ REPLACE-ME</code>
+- Home page with links to submit your travel details and view existing entries.
+- Search page for finding matches on a specific date.
+- Summary page with charts showing popular travel times and destinations.
+- Credits page showcasing the developer.
+- Data stored and retrieved from Google Sheets in real time.
 
 ---
 
@@ -71,15 +75,15 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/main.py'>main.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>Home page with introduction and navigation</td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/requirements.txt'>requirements.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>Python package requirements</td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/packages.txt'>packages.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>List of OS packages (currently empty)</td>
 			</tr>
 			</table>
 		</blockquote>
@@ -90,15 +94,15 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/pages/3_🎉_Credits_Page.py'>3_🎉_Credits_Page.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>Credits page</td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/pages/1_🔎_Search_by_Date.py'>1_🔎_Search_by_Date.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>Search results by date</td>
 			</tr>
 			<tr>
 				<td><b><a href='https://github.com/Satya1929/Carpool_App/blob/master/pages/2_📊_All Days_Summary.py'>2_📊_All Days_Summary.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td>Aggregated travel summary</td>
 			</tr>
 			</table>
 		</blockquote>
@@ -149,7 +153,7 @@ Run Carpool_App using the following command:
 **Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
 
 ```sh
-❯ python {entrypoint}
+❯ streamlit run main.py
 ```
 
 
