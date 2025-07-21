@@ -1,14 +1,14 @@
 <div align="left" style="position: relative;">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<!-- <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;"> -->
 <h1>CARPOOL_APP</h1>
 <p align="left">
 	<em><code>Streamlit-based carpool dashboard using Google Sheets</code></em>
 </p>
 <p align="left">
-	<img src="https://img.shields.io/github/license/Satya1929/Carpool_App?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+<!-- 	<img src="https://img.shields.io/github/license/Satya1929/Carpool_App?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license"> -->
 	<img src="https://img.shields.io/github/last-commit/Satya1929/Carpool_App?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/Satya1929/Carpool_App?style=default&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/Satya1929/Carpool_App?style=default&color=0080ff" alt="repo-language-count">
+<!-- 	<img src="https://img.shields.io/github/languages/count/Satya1929/Carpool_App?style=default&color=0080ff" alt="repo-language-count"> -->
 </p>
 <p align="left"><!-- default option, no dependency badges. -->
 </p>
@@ -169,9 +169,9 @@ Run the test suite using the following command:
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [X] **`Task 1`**: <strike>Deploy and bring over 1000 users.</strike>
+- [ ] **`Task 2`**: Implement toggle button for vit to home / home to vit.
+- [ ] **`Task 3`**: Implement AI Match feature with login .
 
 ---
 
