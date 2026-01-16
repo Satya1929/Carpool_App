@@ -4,8 +4,7 @@
 	<em><code>Streamlit-based carpool dashboard using Google Sheets</code></em>
 </p>
 <p align="left">
-	<img src="https://img.shields.io/github/license/Satya1929/Carpool_App?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/Satya1929/Carpool_App?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<!-- <img src="https://img.shields.io/github/last-commit/Satya1929/Carpool_App?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit"> -->
 	<img src="https://img.shields.io/github/languages/top/Satya1929/Carpool_App?style=default&color=0080ff" alt="repo-top-language">
 </p>
 </div>
@@ -34,6 +33,8 @@
 
 ## 📍 Overview
 **V_Carpool** is a community-driven carpooling application built with **Python** and **Streamlit**. It acts as a matchmaking platform for travelers—primarily university students and daily commuters—helping them find compatible partners based on shared preferences and travel dates.
+
+### 🌐 [Visit Live App](https://vit-carpool-by-satya.streamlit.app/)
 
 By leveraging **Google Sheets** as a real-time backend, V_Carpool collects user submissions via Google Forms and dynamically displays them in a clean, searchable dashboard.
 
@@ -193,7 +194,7 @@ The project includes a suite of unit tests to verify data processing utilities.
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Phase 1`**: Successfully deployed with 1000+ active users.
+- [X] **`Phase 1`**: Successfully deployed with 1000+ active users ([Try it here](https://vit-carpool-by-satya.streamlit.app/)).
 - [ ] **`Phase 2`**: Implement bidirectional filtering (Campus to Home / Home to Campus).
 - [ ] **`Phase 3`**: Develop AI-powered matchmaking and user authentication.
 
