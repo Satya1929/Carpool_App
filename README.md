@@ -201,7 +201,7 @@ The project includes a suite of unit tests to verify data processing utilities.
 
 ## 🔰 Contributing
 
-- ** [Report Issues](https://github.com/Satya1929/Carpool_App/issues)**: Submit bugs found or log feature requests for the `Carpool_App` project.
+- [Report Issues](https://github.com/Satya1929/Carpool_App/issues): Submit bugs found or log feature requests for the `Carpool_App` project.
 
 <details closed>
 <summary>Contributing Guidelines</summary>
@@ -239,12 +239,12 @@ The project includes a suite of unit tests to verify data processing utilities.
 </details>
 
 ---
-
+<!-- 
 ## 🎗️ License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
----
+--- -->
 
 ## 🙌 Acknowledgments
 
