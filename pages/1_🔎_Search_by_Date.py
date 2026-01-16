@@ -132,6 +132,7 @@ import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 import matplotlib.pyplot as plt
+from utils import handle_nan, categorize_time
 
 # Google Sheets URL
 url = "https://docs.google.com/spreadsheets/d/1fbEmtrmVu9heYMfL5P1a9qJ5q0xT3tFj3y2TFVEiGIk/edit?usp=sharing"
@@ -175,17 +176,7 @@ def card_style():
         </style>
     """, unsafe_allow_html=True)
 
-# Function to handle NaN values
-def handle_nan(value):
-    return "Nil" if pd.isna(value) else value
-
-# Function to categorize time into intervals
-def categorize_time(time_str):
-    try:
-        time = pd.to_datetime(time_str)
-        return f"{time.hour}PM - {time.hour + 1}PM" if time.hour < 12 else f"{time.hour - 12}PM - {time.hour - 11}PM", time.hour
-    except Exception:
-        return "Invalid Time", 0  # Default hour for invalid time
+# Utility functions are imported from utils.py
 
 # Search button
 if st.button("Search"):
