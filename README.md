@@ -1,7 +1,7 @@
 <div align="left" style="position: relative;">
-<h1>CARPOOL_APP</h1>
+<h1>V_CARPOOL</h1>
 <p align="left">
-	<em><code>Streamlit-based carpool dashboard using Google Sheets</code></em>
+	<em><code>"Bridging the Gap Between Commuters — A Smart, Serverless Carpool Matchmaking Dashboard"</code></em>
 </p>
 <p align="left">
 	<!-- <img src="https://img.shields.io/github/last-commit/Satya1929/Carpool_App?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit"> -->
@@ -26,7 +26,7 @@
   - [🧪 Testing](#🧪-testing)
 - [📌 Project Roadmap](#-project-roadmap)
 - [🔰 Contributing](#-contributing)
-- [🎗️ License](#-license)
+<!-- - [🎗️ License](#-license) -->
 - [🙌 Acknowledgments](#-acknowledgments)
 
 ---
