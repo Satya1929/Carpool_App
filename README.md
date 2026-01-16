@@ -66,11 +66,36 @@ By leveraging **Google Sheets** as a real-time backend, V_Carpool collects user 
 
 ## 🛠️ Tech Stack
 
-- **Frontend & App Framework:** [Streamlit](https://streamlit.io/)
-- **Language:** [Python](https://www.python.org/)
-- **Data Engineering:** [Pandas](https://pandas.pydata.org/)
-- **Data Visualization:** [Matplotlib](https://matplotlib.org/)
-- **Database/Storage:** [Google Sheets API](https://developers.google.com/sheets/api)
+### 1. **Core Language & Frameworks**
+- **[Python 3.x](https://www.python.org/):** The backbone of the entire application.
+- **[Streamlit](https://streamlit.io/):** Frontend framework used for the multi-page app architecture (`main.py` + `pages/` directory).
+
+### 2. **Backend & Data Integration**
+- **[Google Sheets API](https://developers.google.com/sheets/api):** Acts as a serverless live database for storing and retrieving user data.
+- **[Google Forms](https://www.google.com/forms/about/):** Entry point for data collection (direct-to-sheet intake).
+- **[Streamlit-GSheets-Connection](https://pypi.org/project/st-gsheets-connection/):** Connector library bridging Streamlit with Google Sheets.
+- **[Pandas](https://pandas.pydata.org/):** Data cleaning, NaN handling, filtering, transformations, and date-based logic.
+
+### 3. **Data Visualization & UI / UX**
+- **[Matplotlib](https://matplotlib.org/):** Custom pie charts for travel time distribution and destination trends.
+- **Custom CSS + HTML (via `st.markdown`):** Glassmorphism cards, hover effects, centered layouts, and responsive UI.
+- **Streamlit Native Components:** `st.date_input`, `st.cache_data` (performance), `st.connection`, and `st.balloons` (UX enhancement).
+- **[Shields.io](https://shields.io/):** Dynamic GitHub badges (license, last commit, status) in README.
+
+### 4. **Testing & Quality Assurance**
+- **[Pytest](https://docs.pytest.org/):** Unit tests in `test_app.py` validating:
+    - Time categorization logic
+    - Data cleaning and preprocessing
+
+### 5. **Deployment & DevOps**
+- **[Streamlit Community Cloud](https://streamlit.io/cloud):** Hosting and deployment platform.
+- **[GitHub](https://github.com/):** Version control and CI/CD via repository integration.
+- **[YouTube](https://www.youtube.com/):** Embedded user guide / walkthrough video.
+
+### 6. **Architecture Highlights**
+- **Serverless Architecture:** No dedicated backend server; Google ecosystem handles persistence.
+- **Auto Deployment:** Push-to-deploy workflow via Streamlit–GitHub integration.
+- **Client-Side Caching Strategy:** Optimized API usage using `st.cache_data`.
 
 ---
 
