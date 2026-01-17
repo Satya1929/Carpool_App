@@ -12,8 +12,8 @@ jobs:
     steps:
     - name: Wait for Streamlit deployment
       run: |
-        echo "⏳ Waiting 120 seconds for Streamlit Cloud to deploy..."
-        sleep 120
+        echo "⏳ Waiting 600 seconds (10 minutes) for Streamlit Cloud to deploy..."
+        sleep 600
     
     - name: Health check - Main page
       run: |
