@@ -37,9 +37,11 @@
 ## 📍 Overview
 **V_Carpool** is a community-driven carpooling application built with **Python** and **Streamlit**. It acts as a matchmaking platform for travelers—primarily university students and daily commuters—helping them find compatible partners based on shared preferences and travel dates.
 
-### 🌐 [Visit Live App](https://vit-carpool-by-satya.streamlit.app/)
-
+### 🌐 Live Dashboard
 By leveraging **Google Sheets** as a real-time backend, V_Carpool collects user submissions via Google Forms and dynamically displays them in a clean, searchable dashboard.
+
+[**Explore the Live Carpool Dashboard →**](https://vit-carpool-by-satya.streamlit.app/)
+
 
 ---
 
