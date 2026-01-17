@@ -6,6 +6,9 @@
 <p align="left">
 	<!-- <img src="https://img.shields.io/github/last-commit/Satya1929/Carpool_App?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit"> -->
 	<img src="https://img.shields.io/github/languages/top/Satya1929/Carpool_App?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/actions/workflow/status/Satya1929/Carpool_App/ci.yml?branch=main&label=tests&style=default&color=0080ff" alt="tests">
+	<img src="https://img.shields.io/github/actions/workflow/status/Satya1929/Carpool_App/security-audit.yml?branch=main&label=security&style=default&color=0080ff" alt="security">
+	<img src="https://img.shields.io/github/actions/workflow/status/Satya1929/Carpool_App/lint.yml?branch=main&label=code%20quality&style=default&color=0080ff" alt="code-quality">
 </p>
 </div>
 <br clear="right">
@@ -96,6 +99,19 @@ By leveraging **Google Sheets** as a real-time backend, V_Carpool collects user 
 - **Serverless Architecture:** No dedicated backend server; Google ecosystem handles persistence.
 - **Auto Deployment:** Push-to-deploy workflow via Streamlit–GitHub integration.
 - **Client-Side Caching Strategy:** Optimized API usage using `st.cache_data`.
+
+### 7. **CI/CD Pipeline**
+- **[GitHub Actions](https://github.com/features/actions):** Automated workflows for quality assurance and deployment verification:
+  - **Continuous Integration:**
+    - Automated testing with pytest on every push/PR
+    - Code quality checks using Ruff linter
+    - Security audits (dependency vulnerabilities, secret detection)
+    - Weekly automated documentation updates
+  - **Continuous Deployment:**
+    - Post-deployment smoke testing
+    - Live app health checks
+    - Automated status monitoring
+
 
 ---
 

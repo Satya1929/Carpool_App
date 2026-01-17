@@ -6,3 +6,6 @@ pandas
 matplotlib
 st-gsheets-connection
 pytest
+pytest-cov
+ruff
+pip-audit

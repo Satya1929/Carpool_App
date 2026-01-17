@@ -1,0 +1,47 @@
+name: CD - Smoke Test
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Wait for Streamlit deployment
+      run: |
+        echo "⏳ Waiting 120 seconds for Streamlit Cloud to deploy..."
+        sleep 120
+    
+    - name: Health check - Main page
+      run: |
+        echo "🏥 Checking main application health..."
+        response=$(curl -s -o /dev/null -w "%{http_code}" https://vit-carpool-by-satya.streamlit.app/)
+        
+        if [ $response -eq 200 ]; then
+          echo "✅ Main page is healthy (HTTP $response)"
+        else
+          echo "❌ Main page returned HTTP $response"
+          exit 1
+        fi
+    
+    - name: Content validation
+      run: |
+        echo "🔍 Validating page content..."
+        content=$(curl -s https://vit-carpool-by-satya.streamlit.app/)
+        
+        # Check for common error indicators
+        if echo "$content" | grep -qi "error\|exception\|traceback"; then
+          echo "⚠️ Warning: Error-related text detected in page content"
+          echo "$content" | grep -i "error\|exception\|traceback" || true
+        else
+          echo "✅ No obvious errors detected in page content"
+        fi
+    
+    - name: Deployment summary
+      if: always()
+      run: |
+        echo "🚀 Smoke test completed"
+        echo "🌐 Live app: https://vit-carpool-by-satya.streamlit.app/"

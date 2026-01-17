@@ -1,0 +1,39 @@
+name: Code Quality - Linting
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install Ruff
+      run: pip install ruff
+    
+    - name: Run Ruff linter
+      run: |
+        echo "🔍 Running Ruff linter..."
+        ruff check . --output-format=github
+      continue-on-error: true
+    
+    - name: Run Ruff formatter check
+      run: |
+        echo "🎨 Checking code formatting..."
+        ruff format --check .
+      continue-on-error: true
+    
+    - name: Lint summary
+      if: always()
+      run: echo "✅ Linting checks completed"
