@@ -210,11 +210,11 @@ if st.button("Search"):
                     st.markdown(f"""
                         <div class="card">
                             <h4>Person {count} of {total_results}</h4>
-                            <p><strong>👤 Name:</strong> {handle_nan(row[0])}</p>
-                            <p><strong>📞 Contact:</strong> {handle_nan(row[1])}</p>
-                            <p><strong>⏰ Travel Time:</strong> {handle_nan(row[2])}</p>
-                            <p><strong>📍 Destination :</strong> {handle_nan(row[3])}</p>
-                            <p><strong>📱 Message:</strong> {handle_nan(row[4])}</p>
+                            <p><strong>👤 Name:</strong> {handle_nan(row.iloc[0])}</p>
+                            <p><strong>📞 Contact:</strong> {handle_nan(row.iloc[1])}</p>
+                            <p><strong>⏰ Travel Time:</strong> {handle_nan(row.iloc[2])}</p>
+                            <p><strong>📍 Destination :</strong> {handle_nan(row.iloc[3])}</p>
+                            <p><strong>📱 Message:</strong> {handle_nan(row.iloc[4])}</p>
                         </div>
                     """, unsafe_allow_html=True)
                     count += 1
@@ -224,8 +224,9 @@ if st.button("Search"):
             filtered_data['Travel Time Interval'], filtered_data['Hour'] = zip(*filtered_data[filtered_data.columns[2]].apply(categorize_time))
             time_distribution = filtered_data['Travel Time Interval'].value_counts()
 
-            # Sort the time_distribution based on the hour
-            sorted_intervals = sorted(time_distribution.index, key=lambda x: int(x.split('PM')[0].strip()))
+            # Sort the time_distribution based on the actual hour values
+            hour_mapping = dict(zip(filtered_data['Travel Time Interval'], filtered_data['Hour']))
+            sorted_intervals = sorted(time_distribution.index, key=lambda x: hour_mapping.get(x, 0))
             sorted_distribution = time_distribution.reindex(sorted_intervals)
 
             # Reverse the order for clockwise display and set startangle to 90
